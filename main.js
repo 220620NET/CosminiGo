@@ -7,6 +7,8 @@ let PlayCount = 0;
 let WinStreak = 0;
 $('.generate').click(function()
 {
+    $('.tm').addClass('spin1');
+    $('.bm').addClass('spin');
     $('.Player-counter-display').text(PlayCount);
     PlayCount++;
         let WinCondition = Math.floor(Math.random() * 2);
@@ -45,20 +47,20 @@ $('.generate').click(function()
         }
         
         let topImg = document.createElement("img"); //creates an html img tag
-        topImg.src = `https://app.pixelencounter.com/api/basic/stars?height=300&width=300&date=${Date.now()}`;
+        topImg.src = `https://app.pixelencounter.com/api/basic/stars?disableBackground=true&height=300&width=300&date=${Date.now()}`;
         $('.tm').html(topImg);
 
-        let rightImg = document.createElement("img"); //creates an html img tag
-        rightImg.src = `https://app.pixelencounter.com/api/v2/basic/svgmonsters?date=${Date.now()}`;
-        $('.image4').html(rightImg);
-
         let bottomImg = document.createElement("img"); //creates an html img tag
-        bottomImg.src = `https://app.pixelencounter.com/api/basic/planets?frame=450&height=300&width=300&date=${Date.now()}`;
+        bottomImg.src = `https://app.pixelencounter.com/api/basic/planets?disableBackground=true&frame=450&height=500&width=500&date=${Date.now()}`;
         $('.bm').html(bottomImg);
-
+        
         let leftImg = document.createElement("img"); //creates an html img tag
         leftImg.src = `https://app.pixelencounter.com/api/basic/monsters/random?date=${Date.now()}`;
         $('.image1').html(leftImg);
+
+        let rightImg = document.createElement("img"); //creates an html img tag
+        rightImg.src = `https://app.pixelencounter.com/api/v2/basic/svgmonsters?disableBackground=True&date=${Date.now()}`;
+        $('.image4').html(rightImg); 
  
 });
 

@@ -29,15 +29,20 @@ header {
 
 .tm {
 	/*flex-grow: 1;*/
+	position: relative;
+	top:-118.5px;
 	height: 45vh;
 	margin: 20%;
-	
+	scale: 1.25;
 }
 
 .bm {
 	/*flex-grow: 1;*/
+	position: relative;
+	top:-160.5px;
 	height: 45vh;
 	margin: 20%;
+	scale:2;
 }
 
 .image1 {
@@ -96,30 +101,34 @@ img {
 	height: 55px;
 }
 
-/*.MiddleButton
-{
-	position:relative;
-	left:10vh;
-	text-shadow: 0 0 15px rgba(255,100,200,1);
-	background: rgba(250, 226, 229, 1);
-	cursor: pointer;
-	color: #ff8800;
-	font-size: 20px;
-	font-weight: bold;
-	text-transform: uppercase;
-	width: 180px;
-	height: 55px;
-	
-}
-
-.MiddleMiddle
-{
-	align-items: center;
-	height: 45vh;
-	margin: 20%;
-}*/
-
 .colour
 {
 	background-color: #00ff0080;
+}
+
+@keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin1 { 
+    100% { -webkit-transform: rotate(-360deg); }
+}
+
+
+.image3{
+    animation: spin 75s linear infinite;
+} 
+
+.image2{
+    animation: spin1 85s linear infinite;
+} 
+
+.spin
+{
+	animation: spin 75s linear infinite;
+}
+
+.spin1
+{
+	animation: spin1 85s linear infinite;
 }
