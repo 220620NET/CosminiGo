@@ -40,12 +40,16 @@ header {
 	margin: 20%;
 }
 
-.right {
-	height: 45vh;
+.image1 {
+	height: 35vh;
+	background: rgb(134,0,133);
+	background: linear-gradient(180deg, rgba(134,0,133,0.26) 18%, rgba(0,73,146,0.61) 92%);
 }
 
-.left {
-	height: 45vh;
+.image4 {
+	height: 35vh;
+	background: rgb(134,0,133);
+	background: linear-gradient(180deg, rgba(134,0,133,0.26) 18%, rgba(0,73,146,0.61) 92%);
 }
 
 img {
@@ -66,3 +70,56 @@ img {
   height: 55px;
 }
 
+.SelectLeft
+{
+	text-shadow: 0 0 15px rgba(255,100,200,1);
+	background: rgba(250, 226, 229, 1);
+	cursor: pointer;
+	color: #ff8800;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 180px;
+	height: 55px;
+}
+
+.SelectRight
+{
+	text-shadow: 0 0 15px rgba(255,100,200,1);
+	background: rgba(250, 226, 229, 1);
+	cursor: pointer;
+	color: #ff8800;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 180px;
+	height: 55px;
+}
+
+/*.MiddleButton
+{
+	position:relative;
+	left:10vh;
+	text-shadow: 0 0 15px rgba(255,100,200,1);
+	background: rgba(250, 226, 229, 1);
+	cursor: pointer;
+	color: #ff8800;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 180px;
+	height: 55px;
+	
+}
+
+.MiddleMiddle
+{
+	align-items: center;
+	height: 45vh;
+	margin: 20%;
+}*/
+
+.colour
+{
+	background-color: #00ff0080;
+}

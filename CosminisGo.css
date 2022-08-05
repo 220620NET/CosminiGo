@@ -3,14 +3,71 @@ body
     background-color: #d0f4de;
 }
 
-.row
+html, body 
 {
-    align-items: center;
-    text-align: center;
+    height: 100%;
+}
+  
+
+/*.row
+{
     height: 800px;
     border-color: aquamarine;
     border-width: 10px;
     border-style: solid;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 4px;
+    align-items: center;
+    justify-items: center;
+
+}*/
+
+.col1
+{
+    border-color:green;
+    border-width: 10px;
+    border-style: solid;
+    height: 100%;
 }
 
+.col2
+{
+    border-color:khaki;
+    border-width: 10px;
+    border-style: solid;
+    height: 100%;
+}
+
+.col3
+{
+    border-color:orangered;
+    border-width: 10px;
+    border-style: solid;
+    height: 100%;
+}
+
+.centre-row-top
+{
+    /*position: relative;*/
+    /*top: 200px;*/
+    border-color:blueviolet;
+    border-width: 5px;
+    border-style: solid;
+    height:50%;
+    vertical-align: middle;
+    grid-auto-flow: row;
+}
+
+.centre-row-bot
+{
+    /*position: relative;
+    top: 50%;*/
+    border-color:coral;
+    border-width: 5px;
+    border-style: solid;
+    display: grid;
+    vertical-align: middle;
+    grid-auto-flow: row;
+}
 
